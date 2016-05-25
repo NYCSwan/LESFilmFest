@@ -21,3 +21,12 @@
   </ul>
 
 </div>
+
+<hr>
+
+<%@film.reviews.each do |review|%>
+
+  <h4><%=review.title%></h4>
+  <p><%=review.body%></p>
+
+<%end%>
