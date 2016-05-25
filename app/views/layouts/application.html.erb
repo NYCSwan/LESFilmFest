@@ -2,25 +2,37 @@
 <html>
 <head>
   <title>LesFilmFest</title>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+    <nav id="user-menu">
+      <ul class="list">
+      <% if logged_in? %>
+        <li>home</li>
+        <li>welcome, <%= link_to current_user.username, user_path(current_user) %></li>
+        <li><%= link_to 'log out', logout_path, method: "delete" %></li>
+      <% else %>
+        <li>home</li>
+        <li><%= link_to 'sign up', new_user_path %></li>
+        <li><%= link_to 'login', login_path %></li>
+      <% end %>
+      </ul>
+    </nav>
+
+    <nav id="nav-bar">
+      <ul class="list">
+        <li class="link"><% %>Reviews</li>
+        <li class="link"><% %>Films</li>
+        <li class="link"><% %>Films</li>
+      </ul>
+    </nav>
+  </header>
 
 
-  <% if logged_in? %>
-  <ul>
-    <li>home</li>
-    <li>welcome, <%= link_to current_user.username, user_path(current_user) %></li>
-    <li><%= link_to 'log out', logout_path, method: "delete" %></li>
-  </ul>
-
-  <% else %>
-    <li>home</li>
-    <li><%= link_to 'sign up', new_user_path %></li>
-    <li><%= link_to 'login', login_path %></li>
-  <% end %>
 
 <%= yield %>
 
