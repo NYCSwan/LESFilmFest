@@ -1,0 +1,57 @@
+body {
+  margin: 0 auto;
+  padding: 5em;
+}
+
+header {
+
+}
+
+#user-menu {
+  background-color: #46494C;
+  display: block;
+  padding: 5px;
+}
+#user-menu li {
+  list-style: none outside none;
+  color: white;
+  margin: 0 10px;
+  display: inline;
+}
+#nav-bar {
+  background-color: white;
+  display: block;
+  padding: 5px;
+}
+
+#nav-bar li {
+  list-style: none outside none;
+  color: #46494C;
+  margin: 0 10px;
+  float: right;
+  display: inline;
+}
+
+.list {
+  list-style: none;
+}
+
+.form {
+  background-color: #C5C3C6;
+  margin: 15px;
+  font-size: 20px;
+}
+
+.form > textarea {
+  margin: 15px;
+  font-size: 20px;
+  resize: none;
+}
+
+#error_explanation {
+  color: red bold;
+}
+
+#content {
+  background: #EEF5DB;
+}

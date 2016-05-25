@@ -12,8 +12,8 @@
     <nav id="user-menu">
       <ul class="list">
       <% if logged_in? %>
-        <li>home</li>
-        <li>welcome, <%= link_to current_user.username, user_path(current_user) %></li>
+        <li><%= link_to 'home', categories_path %></li>
+        <li>Welcome, <%= link_to current_user.username.capitalize, user_path(current_user) %></li>
         <li><%= link_to 'log out', logout_path, method: "delete" %></li>
       <% else %>
         <li>home</li>
@@ -25,7 +25,7 @@
 
     <nav id="nav-bar">
       <ul class="list">
-        <li class="link"><% %>Reviews</li>
+        <li class="link"><%= link_to %>Reviews</li>
         <li class="link"><% %>Films</li>
         <li class="link"><% %>Films</li>
       </ul>
