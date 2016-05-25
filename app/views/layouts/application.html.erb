@@ -26,7 +26,9 @@
       <ul class="list">
         <li class="link"><%= link_to 'Film Categories', categories_path %></li>
         <li class="link"><%= link_to "Films", films_path %></li>
+        <%if logged_in? %>
         <li class="link"><%= link_to "My Page", user_path(current_user) %></li>
+        <% end %>
       </ul>
     </nav>
   </header>

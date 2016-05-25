@@ -1,11 +1,39 @@
-<h2>Create new review.</h2>
+<%= form_for @review do |f| %>
+  <% if @review.errors.any? %>
+    <p><%=pluralize(@user.errors.count, "error") %> prevented this post from saving.</p>
 
-<form action="/reviews" method="post">
-  <%= token_tag %>
-  <input type="hidden" name="review[user_id]" value="<%=@user.id%>">
-  <input type="hidden" name="review[film_id]" value="<%=@film.id%>">
-  <input type="text" name="review[title]" placeholder="Title">
-  <input type="text" name="review[body]" placeholder="Body">
-  <input type="text" name="review[star_value]" placeholder="Star Value">
-  <input type="submit" value="Create">
-</form>
+    <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+
+  <%end%>
+
+  <p>
+    <%=f.label :title %><br>
+    <%=f.text_field :title %>
+  </p>
+
+  <p>
+    <%=f.label :body %><br>
+    <%=f.text_field :body %>
+  </p>
+
+  <p>
+    <%=f.label :star_value %><br>
+    <%=f.select :star_value, [1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5] %>
+  </p>
+
+   <p>
+    <%=f.hidden_field :user_id, :value => current_user.id %><br>
+  </p>
+
+     <p>
+    <%=f.hidden_field :film_id, :value => @film_id %><br>
+  </p>
+  </p>
+
+   <p>
+    <%=f.submit %>
+  </p>
+<% end %>

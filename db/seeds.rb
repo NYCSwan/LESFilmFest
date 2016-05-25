@@ -57,3 +57,8 @@ categories = %w( Magical-Realism Film-Noir Animation Comedy Drama Urban-Adventur
     Category.create!(:name       => category)
 end
 
+User.create(email: "brian@brian.com", username:"brian", password: "password", judge_status: true)
+
+User.create(email: "megan@megan.com", username:"megan", password: "password", judge_status: true)
+
+User.create(email: "christyn@christyn.com", username:"christyn", password: "password", judge_status: true)
