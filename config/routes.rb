@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  get '/comments/new' => 'comments#new'
-  post '/comments' => 'comments#create'
+
+  resources :comments, only: [:new, :create]
+  resources :reviews, only: [:new, :create]
+
 
   resources :categories, only: [:show, :index]
 
