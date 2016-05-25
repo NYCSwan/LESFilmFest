@@ -1,0 +1,23 @@
+<h1><%= @film.title.capitalize %></h1>
+
+<% if @film.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@film.errors.count, "error") %></h2>
+
+    <ul>
+    <% @film.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<div id="content">
+  <h3><%= @film.description %></h3>
+  <ul>
+    <p>Writers:<li><%= @film.writers %></li></p>
+    <p>Actors:<li><%= @film.actors %></li></p>
+    <p>Director:<li><%= @film.director %></li></p>
+  </ul>
+
+</div>
