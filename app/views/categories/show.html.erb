@@ -2,7 +2,7 @@
 
   <h1><%= @category.name %></h1>
 
-    <ul>
+    <ul class="list">
       <% @category_films.each do |film| %>
       <li> <%= link_to "#{film.title}", film_path(film) %></li>
       <% end %>
