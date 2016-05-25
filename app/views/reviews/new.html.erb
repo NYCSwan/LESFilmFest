@@ -1,0 +1,11 @@
+<h2>Create new review.</h2>
+
+<form action="/reviews" method="post">
+  <%= token_tag %>
+  <input type="hidden" name="review[user_id]" value="<%=@user.id%>">
+  <input type="hidden" name="review[film_id]" value="<%=@film.id%>">
+  <input type="text" name="review[title]" placeholder="Title">
+  <input type="text" name="review[body]" placeholder="Body">
+  <input type="text" name="review[star_value]" placeholder="Star Value">
+  <input type="submit" value="Create">
+</form>
