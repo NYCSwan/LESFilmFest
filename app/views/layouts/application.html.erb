@@ -18,8 +18,8 @@
 
   <% else %>
     <li>home</li>
-    <%= link_to 'sign up', new_user_path %>
-    <%= link_to 'login', login_path %>
+    <li><%= link_to 'sign up', new_user_path %></li>
+    <li><%= link_to 'login', login_path %></li>
   <% end %>
 
 <%= yield %>
