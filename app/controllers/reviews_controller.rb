@@ -1,11 +1,21 @@
 class ReviewsController < ApplicationController
 
   def new
-
+     @review = Review.new
+     @film_id = params[:film_id]
   end
 
   def create
-    Review.create!(params.require(:review).permit(:title, :body, :user_id, :film_id))
+     @review = Review.new(review_params)
+    if @review.save
+      redirect_to "/films/#{@review.film.id}"
+    else
+      render 'new'
+    end
   end
 
+ private
+    def review_params
+      params.require(:review).permit(:title, :body, :star_value, :user_id, :film_id)
+    end
 end

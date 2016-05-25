@@ -2,10 +2,8 @@ Rails.application.routes.draw do
 
   resources :comments, only: [:new, :create]
   resources :reviews, only: [:new, :create]
-
-
+  resources :films, only: [:index, :show]
   resources :categories, only: [:show, :index]
-
   resources :users, only: [:show, :new, :create]
 
   get    'login'   => 'sessions#new'
@@ -17,7 +15,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  resources :films, only: [:index, :show]
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
