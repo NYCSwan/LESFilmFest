@@ -1,0 +1,14 @@
+<div>
+
+  <h1><%= @category.name %></h1>
+
+    <ul>
+      <% @category_films.each do |film| %>
+      <li> <%= link_to "#{film.title}", film_path(film) %></li>
+      <% end %>
+    </ul>
+
+
+    <%= link_to "Back to category listing", categories_path %>
+
+</div>
