@@ -1,7 +1,7 @@
 <h1>LES Film Festival Categories</h1>
 
 <div>
-    <ul>
+    <ul class="list">
       <% @categories.each do |category| %>
       <li> <%= link_to "#{category.name}", category_path(category) %></li>
       <% end %>

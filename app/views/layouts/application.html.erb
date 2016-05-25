@@ -10,10 +10,10 @@
 <body>
   <header>
     <nav id="user-menu">
-      <ul class="list">
+      <ul class="list" id="index">
       <% if logged_in? %>
         <li><%= link_to 'home', categories_path %></li>
-        <li>Welcome, <%= link_to current_user.username.capitalize, user_path(current_user) %></li>
+        <li>Welcome, <%= current_user.username.capitalize %></li>
         <li><%= link_to 'log out', logout_path, method: "delete" %></li>
       <% else %>
         <li>home</li>
@@ -25,9 +25,9 @@
 
     <nav id="nav-bar">
       <ul class="list">
-        <li class="link"><%= link_to %>Reviews</li>
-        <li class="link"><% %>Films</li>
-        <li class="link"><% %>Films</li>
+        <li class="link"><%= link_to 'Film Categories', categories_path %></li>
+        <li class="link"><%= link_to "Films", films_path %></li>
+        <li class="link"><%= link_to "My Page", user_path(current_user) %></li>
       </ul>
     </nav>
   </header>
@@ -36,5 +36,10 @@
 
 <%= yield %>
 
+  <footer>
+    <h4>(C) Megan, Cristyn, Brian, Adam</h4>
+    <a href="https://github.com/ChristynBudzyna/les-film-fest-3">Our Code</a>
+
+  </footer>
 </body>
 </html>
