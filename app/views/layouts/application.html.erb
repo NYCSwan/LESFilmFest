@@ -8,6 +8,20 @@
 </head>
 <body>
 
+
+  <% if logged_in? %>
+  <ul>
+    <li>home</li>
+    <li>welcome, <%= link_to current_user.username, user_path(current_user) %></li>
+    <li><%= link_to 'log out', logout_path, method: "delete" %></li>
+  </ul>
+
+  <% else %>
+    <li>home</li>
+    <%= link_to 'sign up', new_user_path %>
+    <%= link_to 'login', login_path %>
+  <% end %>
+
 <%= yield %>
 
 </body>
