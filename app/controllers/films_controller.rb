@@ -5,14 +5,16 @@ class FilmsController < ApplicationController
   end
 
   def show
-    @film = Film.find(film_params)
+    @film = Film.find_by(id: params[:id])
+
+    # @category = Category.find(params[:category_id])
   end
 
 
 
-private
+# private
 
-  def film_params
-    params.require(:film).permit(:id)
-  end
+#   def film_params
+#     params.require(:film).permit(:id)
+#   end
 end

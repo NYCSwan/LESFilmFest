@@ -2,6 +2,6 @@
 
 <ul>
 <% @films.each do |film| %>
-  <li><%= link_to films_path, film.title %></li>
+  <li><%= link_to film.title, film_path(film) %></li>
 <% end %>
 </ul>

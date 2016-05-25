@@ -32,7 +32,7 @@ end
 
 reviews = 100.times.map do
   Review.create!(:title      => Faker::Hipster.sentence(1),
-                  :body        => Faker::Hipster.paragraph(3),
+                  :body        => Faker::Hipster.paragraph(3, 5),
                   :star_value => rand(1..5),
                   :user_id    => rand(1..30),
                   :film_id    => rand(1..50)  )
