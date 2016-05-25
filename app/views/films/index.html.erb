@@ -1,0 +1,7 @@
+<h1>LES Film Index</h1>
+
+<ul>
+<% @films.each do |film| %>
+  <li><%= link_to films_path, film.title %></li>
+<% end %>
+</ul>
