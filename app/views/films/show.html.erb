@@ -14,6 +14,7 @@
 
 <div id="content">
   <h3><%= @film.description %></h3>
+
   <ul class="list">
     <p>Writers:<li><%= @film.writers %></li></p>
     <p>Actors:<li><%= @film.actors %></li></p>
@@ -21,3 +22,13 @@
   </ul>
 
 </div>
+
+<hr>
+
+<%@film.reviews.each do |review|%>
+
+  <h4><%=review.title%></h4>
+  <p><%=review.body%></p>
+
+<%end%>
+>>>>>>> master
