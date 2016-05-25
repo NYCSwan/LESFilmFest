@@ -1,9 +1,9 @@
 <div>
 
-  <h1><%= @category.title %></h1>
+  <h1><%= @category.name %></h1>
 
     <ul>
-      <% @category.films.each do |film| %>
+      <% @category_films.each do |film| %>
       <li> <%= link_to "#{film.title}", film_path(film) %></li>
       <% end %>
     </ul>
