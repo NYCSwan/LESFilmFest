@@ -13,11 +13,19 @@ Category.delete_all
 Review.delete_all
 Comment.delete_all
 
-users = 30.times.map do
+users = 20.times.map do
   User.create!( :username     => Faker::Name.name,
                 :email        => Faker::Internet.email,
                 :password_digest     => 'password',
+                :avitar       =>
                 :judge_status => false )
+end
+
+judges = 12.times.map do
+  User.create!( :username     => Faker::Name.name,
+                :email        => Faker::Internet.email,
+                :password_digest     => 'password',
+                :judge_status => true)
 end
 
 films = 50.times.map do
