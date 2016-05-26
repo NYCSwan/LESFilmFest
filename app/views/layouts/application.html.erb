@@ -13,7 +13,7 @@
       <ul class="list" id="index">
       <% if logged_in? %>
         <li><%= link_to 'home', categories_path %></li>
-        <li>Welcome <%= link_to 'User', user_path(current_user)%></li>
+       <li>Welcome, <%= current_user.username.capitalize %></li>
         <li><%= link_to 'log out', logout_path, method: "delete" %></li>
       <% else %>
         <li>home</li>
