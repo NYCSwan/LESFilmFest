@@ -9,6 +9,10 @@ class ApplicationController < ActionController::Base
     def logged_in?
        current_user != nil
     end
+
+    # def same_user?(user)
+    #   logged_in? && current_user == user
+    # end
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
