@@ -130,13 +130,7 @@ header {
   font-family: Oswald;
 }
 
-.category-names a:link{
-  color: white;
-  background-color: #1985A1;
-  padding: 7%;
-}
-
-.category-names a:visited{
+.category-span{
   color: white;
   background-color: #1985A1;
   padding: 7%;
