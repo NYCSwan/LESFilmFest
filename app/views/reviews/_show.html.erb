@@ -1,0 +1,11 @@
+<h2><%=review.title%></h2>
+<p><%=review.body%></p>
+<h4>Comments</h4>
+<p>
+  <% review.comments.each do |comment| %>
+    <%=render partial: 'comments/show', locals: {comment: comment}%>
+  <% end %>
+</p>
+<%if logged_in?%>
+  <%= link_to 'Leave A Comment On This Review', "/comments/new?review_id=#{review.id}" %>
+<%end%>
