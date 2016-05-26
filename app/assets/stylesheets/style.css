@@ -205,6 +205,11 @@ li a{
   border-top: 1px dashed #C5C3C6;
 }
 
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> master
 #movie-title-div {
   background-color: #C5C3C6;
   width: 500px;
@@ -228,6 +233,7 @@ li a{
 }
 
 div.hidden {
+
     display: none
 }
 
@@ -249,7 +255,6 @@ div.hidden {
   -webkit-fill-color: #FFFFFF;
   text-shadow: 1px 0px 20px yellow;
 }
-
 
 #button-div {
   text-align: center;
@@ -283,3 +288,4 @@ div.hidden {
   position:relative;
   left: 30%;
 }
+
