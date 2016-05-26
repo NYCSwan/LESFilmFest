@@ -195,6 +195,7 @@ li a{
   border-top: 1px dashed #C5C3C6;
 }
 
+<<<<<<< HEAD
 
 
 #movie-title-div {
@@ -217,4 +218,8 @@ li a{
 
 #film-index {
   text-align: center;
+}
+
+div.hidden {
+    display: none
 }
