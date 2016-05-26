@@ -1,11 +1,18 @@
 body {
   margin: 0 auto;
   padding: 5em;
+
   font-family: 'Chewy', cursive;
+
+
+
+>>>>>>> master
 }
 
 header {
-
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #user-menu {
@@ -41,6 +48,8 @@ header {
 .list {
   list-style: none;
   text-decoration: none;
+  margin: 1px;
+  width: 20%;
 }
 
 .form {
@@ -63,6 +72,14 @@ header {
   background: #EEF5DB;
 }
 
+.category-names{
+  display: inline-block;
+  width: 30%;
+  padding: 10px 10px;
+  margin: 5px;
+  padding:;
+}
+
 #index {
 
 }
@@ -71,7 +88,7 @@ header {
 }
 
 footer {
-  background-color:
+  background-color: #1985A1;
   clear: all;
 }
 
