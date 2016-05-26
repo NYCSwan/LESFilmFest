@@ -2,11 +2,15 @@
 
   <h1><%= @category.name %></h1>
 
-    <ul class="list">
+    <ul id="film-list">
       <% @category_films.each do |film| %>
-      <li> <%= link_to "#{film.title}", film_path(film) %></li>
-      <li> Rating: <%= film.round_to_fifth%> stars</li>
+      <div class="film-div">
+      <li> <h3><%= link_to "#{film.title.upcase}", film_path(film) %></h3></li>
+      <li> <span class="underline-span">Description:</span> <%= film.description%></li><br>
+      <li> <span class="underline-span">Rating:</span> <%= film.round_to_fifth%> stars</li>
+       </div>
       <% end %>
+
     </ul>
 
 

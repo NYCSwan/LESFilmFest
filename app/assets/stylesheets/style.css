@@ -1,13 +1,17 @@
 body {
   margin: 0 auto;
   padding: 2em;
-  font-family: 'Droid Sans';
+  font-family: 'Didact Gothic', sans-serif;
   width: 70%;
+}
+
+#festival-category-header {
+  font-family: "Oswald";
+  margin-left: 15px;
 }
 
 h1 {
   font-family: "Oswald";
-  margin-left: 15px;
 }
 
 header {
@@ -41,7 +45,6 @@ header {
   text-decoration: none;
   font-family: "Oswald";
   padding: 1% 2% 1% 2%;
-
 }
 
 #index li a:link{
@@ -56,6 +59,27 @@ header {
   background-color: #1985A1;
 }
 
+#film-list h3 {
+  font-family: Oswald;
+  color: #1985A1;
+}
+
+#film-list h3 a:link{
+  color: #1985A1;
+}
+
+#film-list h3 a:visited{
+  color: #1985A1;
+}
+
+.film-div {
+  border-bottom: 2px dashed #DCDCDD;
+}
+
+.underline-span {
+  text-decoration: underline;
+
+}
 
 .form {
   background-color: #C5C3C6;
