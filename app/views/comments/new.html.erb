@@ -1,9 +1,31 @@
-<h2>Create new comment.</h2>
+<h2>Create A New Comment</h2>
 
-<form action="/comments" method="post">
-  <%= token_tag %>
-  <input type="hidden" name="comment[user_id]" value="<%=@user.id%>">
-  <input type="hidden" name="comment[review_id]" value="<%=@review.id%>">
-  <input type="text" name="comment[body]">
-  <input type="submit" value="Create">
-</form>
+<%= form_for @comment do |f| %>
+  <% if @comment.errors.any? %>
+    <p><%=pluralize(@comment.errors.count, "error") %> prevented this post from saving.</p>
+
+    <ul>
+      <% @comment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+
+  <%end%>
+
+  <p>
+    <%=f.label :body %><br>
+    <%=f.text_field :body %>
+  </p>
+
+   <p>
+    <%=f.hidden_field :user_id, :value => current_user.id %><br>
+  </p>
+
+     <p>
+    <%=f.hidden_field :review_id, :value => @review_id %><br>
+  </p>
+  </p>
+
+   <p>
+    <%=f.submit %>
+  </p>
+<% end %>
