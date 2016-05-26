@@ -1,8 +1,12 @@
 body {
   margin: 0 auto;
   padding: 5em;
-  font-family: 'Balthazar', serif;
 
+  font-family: 'Chewy', cursive;
+
+
+
+>>>>>>> master
 }
 
 header {
@@ -60,6 +64,11 @@ header {
   resize: none;
 }
 
+.form-button {
+  border: 3px solid black;
+  padding: 1px;
+}
+
 #error_explanation {
   color: red bold;
 }
@@ -86,4 +95,30 @@ header {
 footer {
   background-color: #1985A1;
   clear: all;
+}
+
+#user-name {
+  position:relative;
+  text-align: center;
+  top:20px;
+  width:25%;
+  left:36%;
+}
+
+#user-reviews {
+  position:relative;
+  text-align: center;
+  top:20px;
+  width:30%;
+  left: 33.5%;
+}
+
+ul {
+  list-style: none;
+  padding: 0px 0px 0px 0px;
+  text-decoration: none;
+}
+
+li a{
+  text-decoration: none;
 }
