@@ -3,16 +3,15 @@
 
 
 <h3>COMMENTS</h3>
-<div class="comment-holder">
-<p>
+<div class="comment-holder" id="<%=review.id%>">
   <% review.comments.each do |comment| %>
     <%=render partial: 'comments/show', locals: {comment: comment}%>
   <% end %>
-</p>
-</div>
+
 
 <%if logged_in?%>
 
-<button class="review-button">
-  <%= link_to 'COMMENT ON THIS REVIEW', "/comments/new?review_id=#{review.id}" %></button>
+<button class="review-button comments" id="button<%=review.id%>">
+  <%= link_to 'COMMENT ON THIS REVIEW', "/comments/new?review_id=#{review.id}", id: "#{review.id}"%></button>
 <%end%>
+</div>
