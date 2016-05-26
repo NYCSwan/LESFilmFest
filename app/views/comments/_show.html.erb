@@ -1,2 +1,5 @@
 <p>posted by: <%= comment.user.username %></p>
 <p>comment: <%= comment.body %></p>
+<%if logged_in? && current_user == comment.user%>
+  <%=render partial: 'comments/delete', locals: {comment: comment}%>
+<%end%>
