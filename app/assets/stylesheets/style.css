@@ -136,6 +136,16 @@ header {
   padding: 7%;
 }
 
+.category-span-winner {
+  color: white;
+  background-color: #1985A1;
+  padding: 7%;
+  -webkit-stroke-width: 5.3px;
+  -webkit-stroke-color: #FFFFFF;
+  -webkit-fill-color: #FFFFFF;
+  text-shadow: 1px 0px 20px yellow;
+}
+
 .category-div {
   background-image: url("http://www.clipartbest.com/cliparts/4ib/ozM/4ibozMk5T.jpeg");
   background-size: 100%;
@@ -240,7 +250,36 @@ div.hidden {
   text-shadow: 1px 0px 20px yellow;
 }
 
+
 #button-div {
   text-align: center;
   margin-bottom: 50px;
+}
+
+.winner-title {
+  -webkit-stroke-width: 40px;
+  -webkit-stroke-color: yellow;
+  -webkit-fill-color: yellow;
+  text-shadow: 3px 3px 50px yellow;
+  position: relative;
+  left: 8%;
+}
+
+#winner-header {
+  font-size: 4em;
+}
+
+.category-div-winner {
+  background-image: url("http://www.clipartbest.com/cliparts/4ib/ozM/4ibozMk5T.jpeg");
+  background-size: 100%;
+  padding: 16%;
+  text-align: center;
+  margin: 5%;
+  border: 1px solid black;
+
+}
+
+#winner-page {
+  position:relative;
+  left: 30%;
 }

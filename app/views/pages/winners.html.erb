@@ -1,7 +1,18 @@
-<h1>WINNERS</h1>
+<div id="winner-page">
+<h1 id="winner-header">W I N N E R S</h1>
 
 <% @categories.each do |category| %>
 
-  <p><%= category.name %></p>
-  <p>Winning Film: <%= category.winner.title %></p><br>
+<li class="category-names">
+  <div class="category-div-winner">
+    <span class="category-span-winner">
+      <%= category.name.upcase %>
+    </span>
+  </div>
+</li>
+
+  <div class="hidden">
+    <h2 class="winner-title"><%= category.winner.title.upcase %></h2><br>
+  </div>
 <% end %>
+</div>
