@@ -17,8 +17,28 @@ def judge_reviews
   judge_average = review_sum / judge_reviews.length
 end
 
+def user_reviews_exist?
+  true if self.reviews.select{|review| review.user.judge_status==false}.length > 0
+end
+
+def judge_reviews_exist?
+  true if self.reviews.select{|review| review.user.judge_status==true}.length > 0
+end
+
 def total_reviews
-  (self.judge_reviews * 0.8) + (self.user_reviews * 0.2)
+  if judge_reviews_exist? && user_reviews_exist?
+      (self.judge_reviews * 0.8) + (self.user_reviews * 0.2)
+  elsif user_reviews_exist?
+    self.user_reviews
+  elsif judge_reviews_exist?
+    self.judge_reviews
+  else
+    0
+  end
+end
+
+def round_to_fifth
+  ((self.total_reviews) * 2).round / 2.0
 end
 
 end
