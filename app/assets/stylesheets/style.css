@@ -130,24 +130,21 @@ header {
   font-family: Oswald;
 }
 
-.category-names a:link{
+.category-span{
   color: white;
-}
-
-.category-names a:visited{
-  color: white;
+  background-color: #1985A1;
+  padding: 7%;
 }
 
 .category-div {
-  background-color: #46494C;
-  padding: 50px;
+  background-image: url("http://www.clipartbest.com/cliparts/4ib/ozM/4ibozMk5T.jpeg");
+  background-size: 100%;
+  padding: 16%;
   text-align: center;
-  margin-right: 0;
+  margin: 5%;
+  border: 1px solid black;
 }
 
-
-
-}
 .link {
   list-style: none;
 }
@@ -198,6 +195,33 @@ li a{
   border-top: 1px dashed #C5C3C6;
 }
 
+
+
+#movie-title-div {
+  background-color: #C5C3C6;
+  width: 500px;
+  padding: 2%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#movie-title-div a:link {
+  text-decoration: none;
+  color: #1985A1;
+}
+
+#movie-title-div a:visited{
+  text-decoration: none;
+  color: #1985A1;
+}
+
+#film-index {
+  text-align: center;
+}
+
 div.hidden {
+
      display: none
 }
+
+
