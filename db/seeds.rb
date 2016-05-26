@@ -52,6 +52,11 @@ comments = 50.times.map do
                  :review_id   => rand(1..100)  )
 end
 
-categories = %w( Magical-Realism Film-Noir Animation Comedy Drama Urban-Adventure).map do |category|
-    Category.create!(:name       => category)
-end
+
+Category.create(name:"Magical-Realism")
+Category.create(name:"Film-Noir")
+Category.create(name:"Animation")
+Category.create(name:"Comedy")
+Category.create(name:"Drama")
+Category.create(name:"Urban Adventure")
+
