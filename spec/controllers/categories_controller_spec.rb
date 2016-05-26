@@ -16,15 +16,12 @@ describe CategoriesController do
       expect(assigns(:category)).to eq(category)
     end
 
-    it 'assigns the requested films as @category_films'
+    it 'assigns the requested films as @category_films' do
+      get :show, { id: category.id }
 
-
-
-
-
-
-
-
+      expect(assigns(:category_films)).to eq([])
+    end
+  end
 
 
 end
