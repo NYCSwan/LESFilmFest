@@ -21,6 +21,7 @@
           <div class="nav-div"><li class="link"><%= link_to "my page", user_path(current_user) %></li></div>
           <div class="nav-div"><li><%= link_to 'log out', logout_path, method: "delete" %></li></div>
       <% else %>
+          <li id="main-header">LES FILM FEST 2016</li>
           <div class="nav-div"><li><%= link_to 'home', categories_path %></li></div>
           <div class="nav-div"><li><%= link_to 'film categories', categories_path %></li></div>
           <div class="nav-div"><li><%= link_to "all films", films_path %></li></div>
@@ -36,9 +37,11 @@
 <%= yield %>
 
   <footer>
-    <h4>(C) Megan, Christyn, Brian, Adam</h4>
-    <a href="https://github.com/ChristynBudzyna/les-film-fest-3">Our Code</a>
-
+    <ul id="footer-list">
+      <li class="footer-text">(C) Megan, Christyn, Brian, Adam</li>
+      <li class="footer-text"> |</li>
+      <li class="footer-text"> <a href="https://github.com/ChristynBudzyna/les-film-fest-3">Our Code</a></li>
+    </ul>
   </footer>
 </body>
 </html>

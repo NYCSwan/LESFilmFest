@@ -1,12 +1,13 @@
 body {
   margin: 0 auto;
-  padding: 5em;
+  padding: 2em;
   font-family: 'Droid Sans';
-  width: 80%;
+  width: 70%;
 }
 
 h1 {
   font-family: "Oswald";
+  margin-left: 15px;
 }
 
 header {
@@ -87,9 +88,25 @@ header {
   padding: 10px 10px;
   margin: 5px;
   padding:;
+  font-family: Oswald;
 }
 
-#index {
+.category-names a:link{
+  color: white;
+}
+
+.category-names a:visited{
+  color: white;
+}
+
+.category-div {
+  background-color: #46494C;
+  padding: 50px;
+  text-align: center;
+  margin-right: 0;
+}
+
+
 
 }
 .link {
@@ -99,6 +116,13 @@ header {
 footer {
   background-color: #1985A1;
   clear: all;
+  font-family: Oswald;
+}
+
+
+.footer-text {
+  padding: 1% 0 1% 1%;
+  display: inline-block;
 }
 
 #user-name {

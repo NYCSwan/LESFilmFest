@@ -1,9 +1,9 @@
-<h1>LES Film Festival Categories</h1>
+<h1>FESTIVAL CATEGORIES</h1>
 
 <div>
     <ul class="list">
       <% @categories.each do |category| %>
-      <li class="category-names"> <%= link_to "#{category.name}", category_path(category) %></li>
+      <li class="category-names"><div class="category-div"> <%= link_to "#{category.name.upcase}", category_path(category) %></div></li>
       <% end %>
     </ul>
 </div>
