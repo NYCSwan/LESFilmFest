@@ -1,6 +1,7 @@
 body {
   margin: 0 auto;
   padding: 5em;
+  font-family: 'Chewy', cursive;
 }
 
 header {
@@ -72,4 +73,30 @@ header {
 footer {
   background-color:
   clear: all;
+}
+
+#user-name {
+  position:relative;
+  text-align: center;
+  top:20px;
+  width:25%;
+  left:36%;
+}
+
+#user-reviews {
+  position:relative;
+  text-align: center;
+  top:20px;
+  width:30%;
+  left: 33.5%;
+}
+
+ul {
+  list-style: none;
+  padding: 0px 0px 0px 0px;
+  text-decoration: none;
+}
+
+li a{
+  text-decoration: none;
 }
