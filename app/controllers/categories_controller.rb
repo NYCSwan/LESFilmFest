@@ -6,7 +6,7 @@ class CategoriesController < ApplicationController
 
   def show
     @category = Category.find(params[:id])
-    @category_films = @category.films
+    @category_films = @category.sort_by_rating
   end
 
 end
