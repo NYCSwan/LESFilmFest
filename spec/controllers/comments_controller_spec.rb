@@ -9,9 +9,6 @@ describe CommentsController do
       expect(assigns(:comment)).to eq(comment)
     end
 
-    it 'assigns the reviewer_id'
-  end
-
    describe "GET #show" do
     it "assigns the requested comment as @comment" do
       get :show, { id: comment.id }
