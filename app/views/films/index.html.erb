@@ -1,7 +1,7 @@
 <h1 id="film-index">LES Film Index</h1>
 
 
-<div id="movie-title-div">
+<div class="hidden" id="movie-title-div">
 <% @films.each do |film| %>
 
     <%= link_to film.title, film_path(film) %> |
