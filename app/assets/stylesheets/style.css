@@ -197,3 +197,7 @@ li a{
 .review-title-header {
   border-top: 1px dashed #C5C3C6;
 }
+
+div.hidden {
+    display: none
+}
