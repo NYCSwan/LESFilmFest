@@ -1,4 +1,4 @@
-<%= form_for comment do |f| %>
+<%= form_for comment, html: {class: 'new'} do |f| %>
   <% if comment.errors.any? %>
     <p><%=pluralize(comment.errors.count, "error") %> prevented this post from saving.</p>
 
@@ -6,7 +6,6 @@
       <% comment.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
-
   <%end%>
 
   <p>
