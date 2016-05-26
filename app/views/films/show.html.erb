@@ -25,9 +25,11 @@
 
 <hr>
 
-<h2>Reviews</h2>
+<h1>Reviews</h1>
 
-<%= link_to 'Leave A Review', "/reviews/new?film_id=#{@film.id}" %>
+<%if logged_in?%>
+  <%= link_to 'Leave A Review', "/reviews/new?film_id=#{@film.id}" %>
+<%end%>
 
 <%@film.reviews.each do |review|%>
   <%=render partial: 'reviews/show', locals: {review: review}%>
