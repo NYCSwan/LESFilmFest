@@ -195,9 +195,6 @@ li a{
   border-top: 1px dashed #C5C3C6;
 }
 
-<<<<<<< HEAD
-
-
 #movie-title-div {
   background-color: #C5C3C6;
   width: 500px;
@@ -222,4 +219,28 @@ li a{
 
 div.hidden {
     display: none
+}
+
+#winner-button {
+    background-color: #4C5C68;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Oswald";
+    text-align: center;
+    margin: 0 auto;
+}
+
+#winner-button:hover {
+  -webkit-stroke-width: 5.3px;
+  -webkit-stroke-color: #FFFFFF;
+  -webkit-fill-color: #FFFFFF;
+  text-shadow: 1px 0px 20px yellow;
+}
+
+#button-div {
+  text-align: center;
+  margin-bottom: 50px;
 }
