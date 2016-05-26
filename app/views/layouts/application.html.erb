@@ -15,18 +15,18 @@
       <ul class="list" id="index">
       <% if logged_in? %>
           <li id="main-header">LES FILM FEST 2016</li>
-          <div class="nav-div"><li><%= link_to 'home', categories_path %></li></div>
-           <div class="nav-div"><li><%= link_to 'film categories', categories_path %></li></div>
-          <div class="nav-div"><li><%= link_to "all films", films_path %></li></div>
-          <div class="nav-div"><li class="link"><%= link_to "my page", user_path(current_user) %></li></div>
-          <div class="nav-div"><li><%= link_to 'log out', logout_path, method: "delete" %></li></div>
+          <div class="nav-div"><li><%= link_to 'Home', categories_path %></li></div>
+           <div class="nav-div"><li><%= link_to 'Film Categories', categories_path %></li></div>
+          <div class="nav-div"><li><%= link_to "All Films", films_path %></li></div>
+          <div class="nav-div"><li class="link"><%= link_to "My Page", user_path(current_user) %></li></div>
+          <div class="nav-div"><li><%= link_to 'Log Out', logout_path, method: "delete" %></li></div>
       <% else %>
           <li id="main-header">LES FILM FEST 2016</li>
-          <div class="nav-div"><li><%= link_to 'home', categories_path %></li></div>
-          <div class="nav-div"><li><%= link_to 'film categories', categories_path %></li></div>
-          <div class="nav-div"><li><%= link_to "all films", films_path %></li></div>
-          <div class="nav-div"><li><%= link_to 'sign up', new_user_path %></li></div>
-          <div class="nav-div"><li><%= link_to 'login', login_path %></li></div>
+          <div class="nav-div"><li><%= link_to 'Home', categories_path %></li></div>
+          <div class="nav-div"><li><%= link_to 'Film Categories', categories_path %></li></div>
+          <div class="nav-div"><li><%= link_to "All Films", films_path %></li></div>
+          <div class="nav-div"><li><%= link_to 'Sign Up', new_user_path %></li></div>
+          <div class="nav-div"><li><%= link_to 'Login', login_path %></li></div>
       <% end %>
       </ul>
     </nav>
