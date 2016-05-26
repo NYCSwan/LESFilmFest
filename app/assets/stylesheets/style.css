@@ -21,7 +21,7 @@ header {
   padding: 5px;
 }
 
-.list {
+#index {
   text-align: right;
 }
 
@@ -29,11 +29,13 @@ header {
   float:left;
   font-size: 3em;
   color: white;
+  font-family: "Oswald";
   position: relative;
-  bottom: 23px;
+  bottom: 13px;
+  padding-left: 13px;
 }
 
-.list li {
+#index .nav-div {
   display: inline-block;
   text-decoration: none;
   font-family: "Oswald";
@@ -41,16 +43,16 @@ header {
 
 }
 
-.list li a:link{
+#index li a:link{
   color: white;
 }
 
-.list li a:visited{
+#index li a:visited{
   color: white;
 }
 
-.list li a:hover{
-  color: red;
+.nav-div:hover {
+  background-color: #1985A1;
 }
 
 
