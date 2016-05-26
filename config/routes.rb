@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
 
-  resources :comments, only: [:new, :create]
+  resources :comments, only: [:new, :create, :delete]
   resources :reviews, only: [:new, :create]
   resources :films, only: [:index, :show]
   resources :categories, only: [:show, :index]
   resources :users, only: [:show, :new, :create]
+
+  delete 'comments/:id' => 'comments#delete'
 
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'

@@ -1,0 +1,7 @@
+
+
+<form action="/comments/<%=comment.id%>" method="post">
+  <%=token_tag%>
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete Comment">
+</form>
