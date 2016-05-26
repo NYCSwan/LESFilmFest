@@ -1,11 +1,18 @@
-<h2><%=review.title%></h2>
+<h2 class="review-title-header"><%=review.title.upcase%></h2>
 <p><%=review.body%></p>
-<h4>Comments</h4>
+
+
+<h3>COMMENTS</h3>
+<div class="comment-holder">
 <p>
   <% review.comments.each do |comment| %>
     <%=render partial: 'comments/show', locals: {comment: comment}%>
   <% end %>
 </p>
+</div>
+
 <%if logged_in?%>
-  <%= link_to 'Leave A Comment On This Review', "/comments/new?review_id=#{review.id}" %>
+
+<button class="review-button">
+  <%= link_to 'COMMENT ON THIS REVIEW', "/comments/new?review_id=#{review.id}" %></button>
 <%end%>

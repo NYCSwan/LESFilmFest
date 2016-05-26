@@ -1,55 +1,88 @@
 body {
   margin: 0 auto;
-  padding: 5em;
-
-  font-family: 'Chewy', cursive;
-
-
-
->>>>>>> master
+  padding: 2em;
+  font-family: 'Didact Gothic', sans-serif;
+  width: 70%;
 }
+
+#festival-category-header {
+  font-family: "Oswald";
+  margin-left: 15px;
+}
+
+h1, h2, h3 {
+  font-family: "Oswald";
+}
+
 
 header {
   width: 100%;
-  margin: 0;
   padding: 0;
 }
 
-#user-menu {
+#user-nav {
   background-color: #46494C;
   border-top: 8px solid #1985A1;
   display: block;
   padding: 5px;
 }
 
-#user-menu li {
-  list-style: none outside none;
+#index {
+  text-align: right;
+}
+
+#main-header {
+  float:left;
+  font-size: 3em;
   color: white;
-  margin: 0 10px;
-  display: inline;
+  font-family: "Oswald";
+  position: relative;
+  bottom: 13px;
+  padding-left: 13px;
 }
 
-#nav-bar {
-  background-color: white;
-
-  display: block;
-  padding: 5px;
-}
-
-#nav-bar li {
-  list-style: none outside none;
-  color: #46494C;
-  margin: 0 10px;
-  float: right;
-  display: inline;
+#index .nav-div {
+  display: inline-block;
   text-decoration: none;
+  font-family: "Oswald";
+  padding: 1% 2% 1% 2%;
 }
 
-.list {
-  list-style: none;
-  text-decoration: none;
-  margin: 1px;
-  width: 20%;
+#index li a:link{
+  color: white;
+}
+
+#index li a:visited{
+  color: white;
+}
+
+.nav-div:hover {
+  background-color: #1985A1;
+}
+
+#film-list h3 {
+  font-family: Oswald;
+  color: #1985A1;
+}
+
+#film-list h3 a:link{
+  color: #1985A1;
+}
+
+#film-list h3 a:visited{
+  color: #1985A1;
+}
+
+.film-div {
+  border-bottom: 2px dashed #DCDCDD;
+}
+
+.underline-span {
+  text-decoration: underline;
+}
+
+#film-info-div ul {
+  padding: 2%;
 }
 
 .form {
@@ -69,12 +102,23 @@ header {
   padding: 1px;
 }
 
-#error_explanation {
-  color: red bold;
+.review-button {
+  background-color: #4C5C68;
+   padding: 10px;
+   font-family: Oswald;
 }
 
-#content {
-  background: #EEF5DB;
+.review-button a {
+  text-decoration: none;
+  color: white;
+}
+
+#film-info-div {
+  background-color: #1985A1;
+}
+
+#error_explanation {
+  color: red bold;
 }
 
 .category-names{
@@ -83,9 +127,25 @@ header {
   padding: 10px 10px;
   margin: 5px;
   padding:;
+  font-family: Oswald;
 }
 
-#index {
+.category-names a:link{
+  color: white;
+}
+
+.category-names a:visited{
+  color: white;
+}
+
+.category-div {
+  background-color: #46494C;
+  padding: 50px;
+  text-align: center;
+  margin-right: 0;
+}
+
+
 
 }
 .link {
@@ -95,6 +155,13 @@ header {
 footer {
   background-color: #1985A1;
   clear: all;
+  font-family: Oswald;
+}
+
+
+.footer-text {
+  padding: 1% 0 1% 1%;
+  display: inline-block;
 }
 
 #user-name {
@@ -121,4 +188,12 @@ ul {
 
 li a{
   text-decoration: none;
+}
+
+.comment-holder {
+  background-color: #C5C3C6;
+}
+
+.review-title-header {
+  border-top: 1px dashed #C5C3C6;
 }

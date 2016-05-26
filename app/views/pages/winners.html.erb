@@ -1,0 +1,6 @@
+<h1>Winners</h1>
+
+<% @categories.each do |category| %>
+  <p><%= category.name %></p>
+  <p>Winning Film: <%= category.winner.title %></p><br>
+<% end %>
