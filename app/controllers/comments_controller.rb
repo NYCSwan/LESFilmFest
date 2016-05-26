@@ -20,9 +20,7 @@ class CommentsController < ApplicationController
     comment.destroy
     redirect_to "/films/#{film_id}"
   end
-    def same_user?(user)
-      logged_in? && current_user == user
-    end
+
  private
     def comment_params
       params.require(:comment).permit(:body,:user_id, :review_id)
