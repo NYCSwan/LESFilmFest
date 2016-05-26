@@ -1,4 +1,4 @@
-<h1><%= @film.title.capitalize %></h1>
+<h1><%= @film.title.upcase %></h1>
 
 <% if @film.errors.any? %>
   <div id="error_explanation">
@@ -12,23 +12,23 @@
   </div>
 <% end %>
 
-<div id="content">
-  <h3><%= @film.description %></h3>
-
-  <ul class="list">
-    <p>Writers:<li><%= @film.writers %></li></p>
-    <p>Actors:<li><%= @film.actors %></li></p>
-    <p>Director:<li><%= @film.director %></li></p>
+<div id="film-info-div">
+  <ul>
+    <p><span class="underline-span">Description:</span> <%= @film.description %></p>
+      <p><li><span class="underline-span">Written by:</span> <%= @film.writers %></li></p>
+      <li><p><span class="underline-span">Starring:</span> <%= @film.actors %></li></p>
+      <li><p><span class="underline-span">Directed by:</span> <%= @film.director %></li></p>
+    </div>
   </ul>
 
 </div>
 
 <hr>
 
-<h1>Reviews</h1>
+<h1>REVIEWS</h1>
 
 <%if logged_in?%>
-  <%= link_to 'Leave A Review', "/reviews/new?film_id=#{@film.id}" %>
+  <button class="review-button"><%= link_to 'REVIEW THIS FILM', "/reviews/new?film_id=#{@film.id}" %></button>
 <%end%>
 
 <%@film.reviews.each do |review|%>

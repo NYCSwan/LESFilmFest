@@ -10,9 +10,10 @@ body {
   margin-left: 15px;
 }
 
-h1 {
+h1, h2, h3 {
   font-family: "Oswald";
 }
+
 
 header {
   width: 100%;
@@ -78,7 +79,10 @@ header {
 
 .underline-span {
   text-decoration: underline;
+}
 
+#film-info-div ul {
+  padding: 2%;
 }
 
 .form {
@@ -98,12 +102,23 @@ header {
   padding: 1px;
 }
 
-#error_explanation {
-  color: red bold;
+.review-button {
+  background-color: #4C5C68;
+   padding: 10px;
+   font-family: Oswald;
 }
 
-#content {
-  background: #EEF5DB;
+.review-button a {
+  text-decoration: none;
+  color: white;
+}
+
+#film-info-div {
+  background-color: #1985A1;
+}
+
+#error_explanation {
+  color: red bold;
 }
 
 .category-names{
@@ -173,4 +188,12 @@ ul {
 
 li a{
   text-decoration: none;
+}
+
+.comment-holder {
+  background-color: #C5C3C6;
+}
+
+.review-title-header {
+  border-top: 1px dashed #C5C3C6;
 }

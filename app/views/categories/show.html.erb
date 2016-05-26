@@ -1,6 +1,6 @@
 <div>
 
-  <h1><%= @category.name %></h1>
+  <h1><%= @category.name.upcase %></h1>
 
     <ul id="film-list">
       <% @category_films.each do |film| %>
