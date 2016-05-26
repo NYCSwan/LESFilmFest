@@ -1,7 +1,9 @@
-<h1>LES Film Index</h1>
+<h1 id="film-index">LES Film Index</h1>
 
-<ul class="list">
+
+<div id="movie-title-div">
 <% @films.each do |film| %>
-  <li><%= link_to film.title, film_path(film) %></li>
+
+    <%= link_to film.title, film_path(film) %> |
 <% end %>
-</ul>
+  </div>
