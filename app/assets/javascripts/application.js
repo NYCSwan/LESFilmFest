@@ -24,6 +24,3 @@ $(document).on('page:load', function () {
 $(document).on('turbolinks:load', function () {
     $('div.hidden').fadeIn(1000).removeClass('hidden');
 });
-
-
-

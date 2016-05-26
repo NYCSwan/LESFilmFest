@@ -1,9 +1,17 @@
 <h1 id="festival-category-header">FESTIVAL CATEGORIES</h1>
 
-<div>
+<div class="hidden">
     <ul class="list">
       <% @categories.each do |category| %>
-      <li class="category-names"><div class="category-div"> <%= link_to "#{category.name.upcase}", category_path(category) %></div></li>
+      <li class="category-names"><a href="/categories/<%=category.id%>"><div class="category-div">
+        <span class="category-span">
+        <%= category.name.upcase %>
+        </span>
+        </div></a></li>
       <% end %>
     </ul>
+</div>
+
+<div id="button-div">
+  <a href="/winners"><button id="winner-button">WINNING FILMS</button></a>
 </div>
