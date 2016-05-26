@@ -5,6 +5,7 @@
     <ul class="list">
       <% @category_films.each do |film| %>
       <li> <%= link_to "#{film.title}", film_path(film) %></li>
+      <li> Rating: <%= film.round_to_fifth%> stars</li>
       <% end %>
     </ul>
 
