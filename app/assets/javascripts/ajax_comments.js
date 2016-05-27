@@ -20,7 +20,7 @@ ready = function() {
 
 // post comments
   $(".submit-comment").children().on("submit", function(event){
-    debugger;
+
     event.preventDefault();
     $(".review-button").show();
 
