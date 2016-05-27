@@ -9,13 +9,13 @@
   <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
 </head>
 <body>
+  <div class="wrapper">
   <header>
 
     <nav id="user-nav">
       <ul class="list" id="index">
       <% if logged_in? %>
           <li id="main-header">LES FILM FEST 2016</li>
-<<<<<<< HEAD
           <div class="nav-div"><li><%= link_to 'Home', categories_path %></li></div>
            <div class="nav-div"><li><%= link_to 'Film Categories', categories_path %></li></div>
           <div class="nav-div"><li><%= link_to "All Films", films_path %></li></div>
@@ -36,7 +36,9 @@
 
 
 <%= yield %>
-
+<div class="push"></div>
+</div>
+ <div class="foot">
   <footer>
     <ul id="footer-list">
       <li class="footer-text">(C) Megan, Christyn, Brian, Adam</li>
@@ -44,5 +46,6 @@
       <li class="footer-text"> <a href="https://github.com/ChristynBudzyna/les-film-fest-3">Our Code</a></li>
     </ul>
   </footer>
+</div>
 </body>
 </html>
