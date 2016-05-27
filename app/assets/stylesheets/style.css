@@ -205,11 +205,6 @@ li a{
   border-top: 1px dashed #C5C3C6;
 }
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> master
 #movie-title-div {
   background-color: #C5C3C6;
   width: 500px;
@@ -261,6 +256,23 @@ div.hidden {
   margin-bottom: 50px;
 }
 
+
+* {
+margin: 0;
+}
+html, body {
+height: 100%;
+}
+.wrapper {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -4em;
+}
+.foot, .push {
+height: 4em;
+}
+
 .winner-title {
   -webkit-stroke-width: 40px;
   -webkit-stroke-color: yellow;
@@ -288,4 +300,3 @@ div.hidden {
   position:relative;
   left: 30%;
 }
-
