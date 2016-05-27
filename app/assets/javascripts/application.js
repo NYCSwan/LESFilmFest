@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
 $(document).ready(function () {
     $('div.hidden').fadeIn(1000).removeClass('hidden');
 });

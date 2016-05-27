@@ -3,6 +3,9 @@ class ReviewsController < ApplicationController
   def new
      @review = Review.new
      @film_id = params[:film_id]
+     if request.xhr?
+      render partial: 'reviews/new', locals: {user: @user, review: @review}
+     end
   end
 
   def create
