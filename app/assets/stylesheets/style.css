@@ -300,3 +300,27 @@ height: 4em;
   position:relative;
   left: 30%;
 }
+
+#registration{
+  position:relative;
+  border: 1px solid black;
+  width:45%;
+  padding:10px;
+  background: #C9A4A4; /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(245,246,246,1) 0%, rgba(219,220,226,1) 16%, rgba(184,186,198,1) 54%, rgba(184,186,198,1) 54%, rgba(221,223,227,1) 82%, rgba(221,223,227,1) 82%, rgba(245,246,246,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(245,246,246,1) 0%,rgba(219,220,226,1) 16%,rgba(184,186,198,1) 54%,rgba(184,186,198,1) 54%,rgba(221,223,227,1) 82%,rgba(221,223,227,1) 82%,rgba(245,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(245,246,246,1) 0%,rgba(219,220,226,1) 16%,rgba(184,186,198,1) 54%,rgba(184,186,198,1) 54%,rgba(221,223,227,1) 82%,rgba(221,223,227,1) 82%,rgba(245,246,246,1) 100%); /* W3C, IE10+, FF16+,
+   Chrome26+, Opera12+, Safari7+ */
+   border-radius: 5px;
+}
+
+.login_or_register{
+  text-align: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+  width: 30%;
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 2px;
+}
