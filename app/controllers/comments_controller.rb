@@ -3,12 +3,19 @@ class CommentsController < ApplicationController
   def new
    @comment = Comment.new
    @review_id = params[:review_id]
+   if request.xhr?
+     render partial: 'comments/new', locals: {comment: @comment}
+   end
   end
 
   def create
     @comment = Comment.new(comment_params)
     if @comment.save
-      redirect_to "/films/#{@comment.review.film.id}"
+      respond_to do |format|
+        format.html { redirect_to :back }
+        format.json { render :json => {count: count} }
+      end
+      # redirect_to "/films/#{@comment.review.film.id}"
     else
       render 'new'
     end

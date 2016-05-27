@@ -25,13 +25,14 @@
 </div>
 
 <hr>
+  <h1>REVIEWS</h1>
+<div class="reviews-container">
+    <%if logged_in?%>
+      <button class="review-button reviews"><%= link_to 'REVIEW THIS FILM', "/reviews/new?film_id=#{@film.id}", id: "#{@film.id}" %></button>
+    <%end%>
 
-<h1>REVIEWS</h1>
 
-<%if logged_in?%>
-  <button class="review-button"><%= link_to 'REVIEW THIS FILM', "/reviews/new?film_id=#{@film.id}" %></button>
-<%end%>
-
-<%@film.reviews.each do |review|%>
-  <%=render partial: 'reviews/show', locals: {review: review}%>
-<%end%>
+    <%@film.reviews.each do |review|%>
+      <%=render partial: 'reviews/show', locals: {review: review}%>
+    <%end%>
+</div>
