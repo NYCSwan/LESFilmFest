@@ -1,5 +1,5 @@
 <%= form_for :sessions do |f| %>
-
+<div id='registration' class='login_or_register'>
   <p>
     <%=f.label :username %><br>
     <%=f.text_field :username %>
@@ -12,4 +12,5 @@
    <p>
     <%=f.submit "login" %>
   </p>
+</div>
 <% end %>
