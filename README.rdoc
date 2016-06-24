@@ -1,28 +1,10 @@
 == README
 
-LES Film Festival is an app
-
-Things you may want to cover:
+LES Film Festival (LES FF) is a web app designed and executed in three days with a team of four using Agile strategies. Preview movies, leave reviews or vote for your favorites! LES FF demonstrates command of Ruby on Rails, JavaScript and its libraries, HTM and CSS.
 
 * Ruby version
 ruby 2.2.3
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
 * Deployment instructions
 
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+  If you'd like to deploy the site, please download, migrate the database and run from local host.
